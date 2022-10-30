@@ -17,7 +17,7 @@ const Profile = () => {
     try {
        setloading(true)
       const rooms = await axios.post(
-        "api/bookings/getbookingsbyuserid",
+        "https://hotelbackend-5.adaptable.app/api/bookings/getbookingsbyuserid",
         { userid: user._id }
       );
       
@@ -39,7 +39,7 @@ const Profile = () => {
     try {
         setloading(true);
         console.log(loading);
-    const result = await axios.post("api/bookings/cancelbooking", {
+    const result = await axios.post("https://hotelbackend-5.adaptable.app/api/bookings/cancelbooking", {
       bookingid,
       roomid,
     }).data;

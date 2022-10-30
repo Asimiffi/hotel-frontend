@@ -24,7 +24,7 @@ const Register = () => {
             }
             try {
                 setloading(true)
-                const result = await axios.post('/api/users/register', user).data
+                const result = await axios.post('https://hotelbackend-5.adaptable.app/api/users/register', user).data
                 setloading(false)
                 
                 Swal.fire('User created successfully', 'success')

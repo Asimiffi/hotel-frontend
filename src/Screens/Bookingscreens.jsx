@@ -74,7 +74,7 @@ const Bookingscreens = () => {
             </div>
             <div className="col-md-6 justify-content-start">
               <h5>Booking Details</h5>
-              <p>Name: {JSON.parse(localStorage.getItem('currentUser')).name} </p>
+              <p>Name: {JSON.parse(localStorage.getItem('currentUser'))?.name} </p>
               <p>From Date:{fromdate} </p>
               <p>To Date: {todate} </p>
               <p>Total Days:{days} </p>

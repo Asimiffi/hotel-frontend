@@ -42,7 +42,7 @@ export function Bookings(){
     useEffect(async()=>{
         try {
             setloading(true)
-            const data = await axios.get('api/bookings/getallbookings')
+            const data = await axios.get('https://hotelbackend-5.adaptable.app/api/bookings/getallbookings')
             setbookings(data.data);
             setloading(false)
 
@@ -90,7 +90,7 @@ export function Rooms(){
     useEffect(async()=>{
         try {
             setloading(true)
-            const data = await axios.get('api/rooms/getallrooms')
+            const data = await axios.get('https://hotelbackend-5.adaptable.app/api/rooms/getallrooms')
             setrooms(data.data.rooms);
             console.log(data.data);
             setloading(false)
@@ -136,7 +136,7 @@ export function Users(){
     useEffect(async()=>{
         try {
             setloading(true)
-            const data = await axios.get('api/users/getallusers')
+            const data = await axios.get('https://hotelbackend-5.adaptable.app/api/users/getallusers')
             setusers(data.data);
             setloading(false)
             console.log(data);

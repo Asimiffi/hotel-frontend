@@ -25,7 +25,7 @@ const Bookingscreens = () => {
   useEffect(() => {
     try {
       axios
-        .post("http://localhost:5000/api/rooms/getroombyid", {
+        .post("https://hotelbackend-5.adaptable.app/api/rooms/getroombyid", {
           roomid: roomid,
         })
         .then((response) => {

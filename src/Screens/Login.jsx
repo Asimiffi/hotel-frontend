@@ -16,7 +16,7 @@ const Login = () => {
         }
         try {
             setloading(true)
-            const result = await axios.post('/api/users/login', user)
+            const result = await axios.post('https://hotelbackend-5.adaptable.app/api/users/login', user)
             localStorage.setItem('currentUser', JSON.stringify(result.data))
             setloading(false)
             window.location.href='/'

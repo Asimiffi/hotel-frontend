@@ -32,7 +32,7 @@ function AddRooms (){
       
       try {
           setloading(true)
-        const result = await axios.post('/api/rooms/addroom', newroom)
+        const result = await axios.post('https://hotelbackend-5.adaptable.app/api/rooms/addroom', newroom)
         setloading(false)
         Swal.fire('Room successfully added', 'success')
       } catch (error) {

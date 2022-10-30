@@ -27,7 +27,7 @@ const Homescreen = () => {
     
      try {
         setloading(true)
-        const data = (await axios.get('http://localhost:5000/api/rooms/getallrooms')).data
+        const data = (await axios.get('https://hotelbackend-5.adaptable.app/api/rooms/getallrooms')).data
             setrooms(data.rooms)
             setduplicateRooms(data.rooms)
             setloading(false)
